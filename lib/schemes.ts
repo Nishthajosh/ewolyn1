@@ -1,0 +1,556 @@
+export interface Scheme {
+  slug: string;
+  title: string;
+  shortDesc: string;
+  highlight: string;
+  highlightLabel: string;
+  icon: string;
+  iconBg: string;
+  category: string;
+  timeline: string;
+  fullDescription: string;
+  eligibility: string[];
+  benefits: string[];
+  documents: string[];
+  process: string[];
+}
+
+export const governmentSchemes: Scheme[] = [
+  {
+    slug: "naif-scheme",
+    title: "NAIF Scheme",
+    shortDesc: "Affordable financing for agricultural infrastructure with 3% interest subvention",
+    highlight: "₹2Cr",
+    highlightLabel: "Max Loan",
+    icon: "🌾",
+    iconBg: "bg-green-500",
+    category: "Loan",
+    timeline: "15–25 days",
+    fullDescription: "The National Agri Infra Financing Facility (NAIF) enables affordable financing for agricultural infrastructure such as cold storage, warehouses, processing units, and modern farming systems with 3% interest subvention.",
+    eligibility: [
+      "FPOs (Farmer Producer Organizations)",
+      "Private companies in agriculture sector",
+      "Individual entrepreneurs",
+      "Startups in agri-sector",
+      "MSMEs in agriculture-related processing"
+    ],
+    benefits: [
+      "3% interest subvention on loans",
+      "Loan up to ₹2 Crore",
+      "7-year repayment tenure",
+      "2-year moratorium period",
+      "Multiple lending institutions available"
+    ],
+    documents: [
+      "Project Report (DPR)",
+      "Land Ownership/Lease Documents",
+      "Identity Proof (Aadhar, PAN)",
+      "Business Registration Documents",
+      "GST Registration",
+      "Bank Statements (6-12 months)"
+    ],
+    process: [
+      "Prepare detailed project report (DPR)",
+      "Eligibility check by lender",
+      "Submit application with documents",
+      "Loan sanctioning and approval",
+      "Disbursement as per project milestones"
+    ]
+  },
+  {
+    slug: "pm-mudra-yojana",
+    title: "PM MUDRA Yojana",
+    shortDesc: "Up to ₹10 Lakh loan without collateral for small businesses",
+    highlight: "₹10L",
+    highlightLabel: "Max Loan",
+    icon: "💰",
+    iconBg: "bg-blue-500",
+    category: "Loan",
+    timeline: "15–25 days",
+    fullDescription: "Pradhan Mantri MUDRA Yojana (PMMY) is a flagship scheme launched by the Government of India to provide loans up to ₹10 lakh to non-corporate, non-farm small/micro enterprises. The scheme has three categories: Shishu (up to ₹50,000), Kishore (₹50,001 to ₹5 lakh), and Tarun (₹5 lakh to ₹10 lakh).",
+    eligibility: [
+      "Any Indian citizen with a business plan for non-farm income generating activity",
+      "Business should be a non-corporate small business segment",
+      "Manufacturing, trading, and service sector enterprises",
+      "Allied agricultural activities are also eligible",
+      "No collateral required for loans up to ₹10 lakh"
+    ],
+    benefits: [
+      "Collateral-free loans up to ₹10 lakh",
+      "Lower interest rates compared to market rates",
+      "Flexible repayment tenure up to 5 years",
+      "No processing fee in many banks",
+      "MUDRA Card for working capital needs"
+    ],
+    documents: [
+      "Identity Proof (Aadhaar, PAN, Voter ID)",
+      "Address Proof (Utility bills, Aadhaar)",
+      "Business proof and registration documents",
+      "Bank statements for last 6 months",
+      "Passport size photographs",
+      "Business plan or project report"
+    ],
+    process: [
+      "Check eligibility and prepare business plan",
+      "Choose the right MUDRA category (Shishu/Kishore/Tarun)",
+      "Submit application with required documents",
+      "Bank verification and field visit",
+      "Loan sanction and disbursement"
+    ]
+  },
+  {
+    slug: "pmegp",
+    title: "PMEGP",
+    shortDesc: "Up to 35% subsidy for manufacturing & service enterprises",
+    highlight: "35%",
+    highlightLabel: "Max Subsidy",
+    icon: "🏭",
+    iconBg: "bg-purple-500",
+    category: "Subsidy",
+    timeline: "30–45 days",
+    fullDescription: "Prime Minister's Employment Generation Programme (PMEGP) is a credit-linked subsidy scheme for setting up new micro enterprises. The scheme provides subsidies ranging from 15% to 35% of the project cost for setting up manufacturing and service sector units.",
+    eligibility: [
+      "Any individual above 18 years of age",
+      "Minimum 8th pass for projects above ₹10 lakh in manufacturing",
+      "Minimum 8th pass for projects above ₹5 lakh in service sector",
+      "Self Help Groups, Charitable Trusts, and Cooperative Societies",
+      "Only new projects are eligible"
+    ],
+    benefits: [
+      "Subsidy up to 35% for special categories in rural areas",
+      "Subsidy up to 25% for general category in rural areas",
+      "Subsidy up to 25% for special categories in urban areas",
+      "Subsidy up to 15% for general category in urban areas",
+      "Project cost up to ₹50 lakh for manufacturing sector"
+    ],
+    documents: [
+      "Project Report",
+      "Educational qualification certificates",
+      "Caste certificate (if applicable)",
+      "Special category certificate (if applicable)",
+      "Identity and address proof",
+      "Passport size photographs"
+    ],
+    process: [
+      "Register online on PMEGP portal",
+      "Submit project proposal with documents",
+      "Screening by District Task Force Committee",
+      "Bank loan sanction",
+      "Subsidy release after project implementation"
+    ]
+  },
+  {
+    slug: "cgtmse",
+    title: "CGTMSE",
+    shortDesc: "Credit guarantee up to ₹5 Crore without third-party guarantee",
+    highlight: "₹5Cr",
+    highlightLabel: "Coverage",
+    icon: "🛡️",
+    iconBg: "bg-teal-500",
+    category: "Loan",
+    timeline: "15–25 days",
+    fullDescription: "Credit Guarantee Fund Trust for Micro and Small Enterprises (CGTMSE) provides guarantee coverage to banks and financial institutions for collateral-free loans extended to MSMEs. The scheme covers credit facilities up to ₹5 crore.",
+    eligibility: [
+      "New and existing Micro and Small Enterprises",
+      "Manufacturing and service enterprises",
+      "Credit facility up to ₹5 crore",
+      "Retail trade is not eligible",
+      "Educational institutions and training centers are eligible"
+    ],
+    benefits: [
+      "Collateral-free credit up to ₹5 crore",
+      "No third-party guarantee required",
+      "Coverage up to 85% for micro enterprises",
+      "Coverage up to 75% for other eligible borrowers",
+      "Encourages banks to lend to MSMEs"
+    ],
+    documents: [
+      "MSME/Udyam Registration",
+      "Business PAN and GST registration",
+      "Identity and address proof of promoters",
+      "Project report and financial projections",
+      "Bank statements and ITR",
+      "Business incorporation documents"
+    ],
+    process: [
+      "Apply for loan at any Member Lending Institution",
+      "Bank evaluates the proposal",
+      "Bank seeks guarantee coverage from CGTMSE",
+      "Guarantee approval and loan disbursement",
+      "Annual guarantee fee payment"
+    ]
+  },
+  {
+    slug: "startup-india",
+    title: "Startup India",
+    shortDesc: "Tax benefits & funding support for DPIIT registered startups",
+    highlight: "80%",
+    highlightLabel: "Tax Exemption",
+    icon: "🚀",
+    iconBg: "bg-orange-500",
+    category: "Recognition",
+    timeline: "7–15 days",
+    fullDescription: "Startup India is a flagship initiative of the Government of India to build a strong ecosystem for nurturing innovation and startups. DPIIT recognition provides access to various benefits including tax exemptions, easier compliance, IPR support, and funding opportunities.",
+    eligibility: [
+      "Entity incorporated as Private Limited or LLP or Partnership",
+      "Less than 10 years from date of incorporation",
+      "Annual turnover not exceeding ₹100 crore",
+      "Working towards innovation or improvement of products/services",
+      "Not formed by splitting or reconstruction of existing business"
+    ],
+    benefits: [
+      "Income tax exemption for 3 consecutive years (80-IAC)",
+      "Exemption from Angel Tax under Section 56(2)(viib)",
+      "Self-certification under 6 labour laws",
+      "Self-certification under 3 environmental laws",
+      "Fast-track patent application and 80% rebate on fees"
+    ],
+    documents: [
+      "Certificate of Incorporation",
+      "PAN of the entity",
+      "Details of directors/partners",
+      "Brief about the business and innovation",
+      "Website/app link (if any)",
+      "Pitch deck or business plan"
+    ],
+    process: [
+      "Register on Startup India portal",
+      "Fill the recognition application",
+      "Submit required documents",
+      "Application review by DPIIT",
+      "Certificate of Recognition issued"
+    ]
+  },
+  {
+    slug: "gem-registration",
+    title: "GeM Registration",
+    shortDesc: "Access ₹3L+ Crore government procurement marketplace",
+    highlight: "₹3L Cr",
+    highlightLabel: "Market Size",
+    icon: "🏛️",
+    iconBg: "bg-red-500",
+    category: "Registration",
+    timeline: "7–15 days",
+    fullDescription: "Government e-Marketplace (GeM) is a one-stop portal for online procurement of goods and services by government buyers. Registration on GeM opens access to a massive government procurement market worth over ₹3 lakh crore annually.",
+    eligibility: [
+      "Any business entity with valid GST registration",
+      "Manufacturers, resellers, and service providers",
+      "Startups and MSMEs get special benefits",
+      "OEMs and authorized resellers",
+      "Must have relevant product/service to offer"
+    ],
+    benefits: [
+      "Access to government procurement worth ₹3L+ crore",
+      "Direct selling to government departments",
+      "No middlemen or tender fees",
+      "Transparent and paperless transactions",
+      "Timely payment (within 10 days)"
+    ],
+    documents: [
+      "GST Registration Certificate",
+      "PAN Card of business",
+      "Bank account details",
+      "Business address proof",
+      "Product/Service catalog",
+      "MSME/Udyam certificate (if applicable)"
+    ],
+    process: [
+      "Register as seller on GeM portal",
+      "Complete profile with business details",
+      "Upload product/service catalog",
+      "Get verified and approved",
+      "Start receiving orders from government buyers"
+    ]
+  },
+  {
+    slug: "nsic-certification",
+    title: "NSIC Certification",
+    shortDesc: "Single point registration for government tenders priority",
+    highlight: "100%",
+    highlightLabel: "EMD Exempt",
+    icon: "📋",
+    iconBg: "bg-cyan-500",
+    category: "Certification",
+    timeline: "15–25 days",
+    fullDescription: "NSIC (National Small Industries Corporation) provides Single Point Registration (SPR) scheme which enables MSMEs to participate in government tenders with benefits like exemption from EMD and priority in procurement.",
+    eligibility: [
+      "Micro and Small Enterprises only",
+      "Should have Udyam Registration",
+      "Manufacturing and service sector MSEs",
+      "Should have necessary infrastructure",
+      "Quality products/services as per standards"
+    ],
+    benefits: [
+      "100% exemption from Earnest Money Deposit (EMD)",
+      "Issue of tender sets free of cost",
+      "Price preference in government purchases",
+      "Prior intimation of tenders",
+      "Financial assistance for raw material procurement"
+    ],
+    documents: [
+      "Udyam Registration Certificate",
+      "PAN and GST registration",
+      "Details of machinery and equipment",
+      "Quality certification (if any)",
+      "Past performance records",
+      "Bank solvency certificate"
+    ],
+    process: [
+      "Apply online on NSIC portal",
+      "Submit required documents",
+      "Technical inspection of unit",
+      "Verification of quality standards",
+      "SPR certificate issuance"
+    ]
+  },
+  {
+    slug: "stand-up-india",
+    title: "Stand-Up India",
+    shortDesc: "Bank loans for SC/ST and women entrepreneurs",
+    highlight: "₹1Cr",
+    highlightLabel: "Max Loan",
+    icon: "👩‍💼",
+    iconBg: "bg-pink-500",
+    category: "Loan",
+    timeline: "15–25 days",
+    fullDescription: "Stand-Up India scheme facilitates bank loans between ₹10 lakh and ₹1 crore to at least one SC/ST borrower and one woman borrower per bank branch for setting up greenfield enterprises in manufacturing, services, or trading sector.",
+    eligibility: [
+      "SC/ST and/or Women entrepreneurs",
+      "Above 18 years of age",
+      "For greenfield (new) enterprise only",
+      "Borrower should not be in default to any bank",
+      "In case of non-individual, 51% shareholding by SC/ST/Woman"
+    ],
+    benefits: [
+      "Composite loan from ₹10 lakh to ₹1 crore",
+      "Covers 75% of project cost as term loan",
+      "Working capital included",
+      "Repayment period up to 7 years",
+      "Margin money of 25% (can be subsidized)"
+    ],
+    documents: [
+      "Identity proof (Aadhaar, PAN)",
+      "Caste certificate for SC/ST",
+      "Address proof",
+      "Business plan/Project report",
+      "Quotations for machinery",
+      "Property documents (if applicable)"
+    ],
+    process: [
+      "Check eligibility on Stand-Up India portal",
+      "Apply online and generate application ID",
+      "Visit nearest bank branch",
+      "Submit documents for verification",
+      "Loan sanction and disbursement"
+    ]
+  },
+  {
+    slug: "seed-fund",
+    title: "Startup SEED Fund",
+    shortDesc: "Early-stage capital support for innovative startups",
+    highlight: "₹50L",
+    highlightLabel: "Max Grant",
+    icon: "🌱",
+    iconBg: "bg-green-500",
+    category: "Grant",
+    timeline: "45–60 days",
+    fullDescription: "Startup India Seed Fund Scheme (SISFS) aims to provide financial assistance to startups for proof of concept, prototype development, product trials, market entry, and commercialization. The scheme is implemented through selected incubators.",
+    eligibility: [
+      "DPIIT recognized startups",
+      "Not more than 2 years old at time of application",
+      "Not received more than ₹10 lakh monetary support under any government scheme",
+      "Should have a business idea with market fit potential",
+      "Should be applying through an approved incubator"
+    ],
+    benefits: [
+      "Grant up to ₹20 lakh for validation of POC/prototype",
+      "Investment up to ₹50 lakh for market launch",
+      "Mentorship from experienced entrepreneurs",
+      "Access to incubator facilities",
+      "Networking opportunities"
+    ],
+    documents: [
+      "DPIIT Recognition Certificate",
+      "Certificate of Incorporation",
+      "Pitch deck and business plan",
+      "Prototype or product demo (if any)",
+      "Team details and background",
+      "Financial projections"
+    ],
+    process: [
+      "Get DPIIT recognition for your startup",
+      "Apply through approved incubator",
+      "Incubator evaluates and shortlists",
+      "Due diligence and selection",
+      "Fund disbursement in tranches"
+    ]
+  },
+  {
+    slug: "tax-exemption-80iac",
+    title: "Tax Exemption Benefits",
+    shortDesc: "Income tax, GST & compliance exemptions for eligible businesses",
+    highlight: "3 Yrs",
+    highlightLabel: "Tax Holiday",
+    icon: "📊",
+    iconBg: "bg-amber-500",
+    category: "Tax Benefit",
+    timeline: "15–25 days",
+    fullDescription: "Section 80-IAC of Income Tax Act provides eligible startups with income tax exemption for 3 consecutive years out of 10 years from incorporation. This helps startups reinvest profits into business growth.",
+    eligibility: [
+      "DPIIT recognized startup",
+      "Incorporated as Private Limited Company or LLP",
+      "Incorporated after April 1, 2016",
+      "Annual turnover not exceeding ₹100 crore",
+      "Should be engaged in innovation/improvement"
+    ],
+    benefits: [
+      "100% tax exemption for 3 consecutive years",
+      "Can choose any 3 years within 10 years from incorporation",
+      "Exemption from Angel Tax",
+      "Reduced compliance burden",
+      "More capital for business reinvestment"
+    ],
+    documents: [
+      "DPIIT Recognition Certificate",
+      "Form 80-IAC application",
+      "Audited financial statements",
+      "Details of innovation/technology",
+      "CA certificate for turnover",
+      "Board resolution"
+    ],
+    process: [
+      "Ensure DPIIT recognition is active",
+      "Apply for 80-IAC certification",
+      "Inter-Ministerial Board evaluation",
+      "Certificate issuance on approval",
+      "Claim exemption while filing ITR"
+    ]
+  },
+  {
+    slug: "zed-certification",
+    title: "ZED Certification",
+    shortDesc: "Zero Defect Zero Effect certification with subsidy support",
+    highlight: "80%",
+    highlightLabel: "Subsidy",
+    icon: "✅",
+    iconBg: "bg-emerald-500",
+    category: "Certification",
+    timeline: "30–45 days",
+    fullDescription: "ZED (Zero Defect Zero Effect) certification is a scheme to enhance global competitiveness of MSMEs by promoting quality products and environmental awareness. Government provides subsidy up to 80% for certification costs.",
+    eligibility: [
+      "Registered MSMEs with Udyam certificate",
+      "Manufacturing enterprises",
+      "Should have quality management systems",
+      "Willing to adopt ZED practices",
+      "Should complete ZED assessment"
+    ],
+    benefits: [
+      "Subsidy up to 80% on certification cost",
+      "Enhanced credibility with buyers",
+      "Access to government procurement benefits",
+      "Improved quality standards",
+      "International market access"
+    ],
+    documents: [
+      "Udyam Registration Certificate",
+      "PAN and GST registration",
+      "Quality certifications (if any)",
+      "Company profile",
+      "Product catalog",
+      "Manufacturing process details"
+    ],
+    process: [
+      "Register on ZED portal",
+      "Complete self-assessment",
+      "Desktop assessment by ZED team",
+      "Site assessment",
+      "Certification and subsidy claim"
+    ]
+  },
+  {
+    slug: "ngo-elevation",
+    title: "NGO Elevation Program",
+    shortDesc: "Financial & compliance support for NGOs and social enterprises",
+    highlight: "₹25L",
+    highlightLabel: "Max Support",
+    icon: "🤝",
+    iconBg: "bg-violet-500",
+    category: "Grant",
+    timeline: "45–60 days",
+    fullDescription: "Support programs for NGOs and social enterprises to access government grants, CSR funding, and compliance support for 12A, 80G, FCRA registrations enabling them to receive domestic and foreign contributions.",
+    eligibility: [
+      "Registered NGO/Trust/Section 8 Company",
+      "At least 3 years of operation",
+      "Clear audit reports for past 3 years",
+      "Working in social development sector",
+      "Pan-India operations or state-specific"
+    ],
+    benefits: [
+      "Access to government grants up to ₹25 lakh",
+      "CSR funding connect and proposals",
+      "12A and 80G registration support",
+      "FCRA registration assistance",
+      "Compliance and audit support"
+    ],
+    documents: [
+      "Trust Deed/MOA/Registration Certificate",
+      "PAN of organization",
+      "Audited accounts for 3 years",
+      "Activity report",
+      "Board resolution",
+      "List of donors and projects"
+    ],
+    process: [
+      "Assessment of NGO profile and needs",
+      "Identify suitable funding schemes",
+      "Prepare compliant documentation",
+      "Submit applications",
+      "Follow-up and disbursement support"
+    ]
+  },
+  {
+    slug: "sc-st-obc-scheme",
+    title: "SC/ST/OBC Scheme",
+    shortDesc: "Special subsidies & capital assistance for reserved categories",
+    highlight: "₹15L",
+    highlightLabel: "Max Subsidy",
+    icon: "⚖️",
+    iconBg: "bg-indigo-500",
+    category: "Subsidy",
+    timeline: "30–45 days",
+    fullDescription: "Various central and state government schemes provide special subsidies and capital assistance for SC/ST/OBC entrepreneurs. These include NSFDC, NBCFDC, and state-specific schemes with subsidized loans and grants.",
+    eligibility: [
+      "SC/ST/OBC certificate holders",
+      "Family income below specified limits",
+      "Age between 18-55 years",
+      "For setting up new or expanding business",
+      "Should not be a defaulter with any bank"
+    ],
+    benefits: [
+      "Subsidy up to ₹15 lakh based on scheme",
+      "Interest subsidy on loans",
+      "Skill development support",
+      "Marketing assistance",
+      "Priority in government procurement"
+    ],
+    documents: [
+      "Caste certificate",
+      "Income certificate",
+      "Identity and address proof",
+      "Business plan/Project report",
+      "Quotations for machinery",
+      "Bank account details"
+    ],
+    process: [
+      "Identify suitable scheme based on category",
+      "Verify eligibility criteria",
+      "Prepare and submit application",
+      "Verification and approval",
+      "Subsidy disbursement"
+    ]
+  }
+];
+
+export function getSchemeBySlug(slug: string): Scheme | undefined {
+  return governmentSchemes.find((scheme) => scheme.slug === slug);
+}
