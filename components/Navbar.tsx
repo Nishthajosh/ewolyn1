@@ -4,7 +4,25 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
-const services = [
+type SubItem = {
+  title: string;
+  description: string;
+  icon: string;
+  iconBg: string;
+  href: string;
+};
+
+type Service = {
+  title: string;
+  description: string;
+  icon: string;
+  iconBg: string;
+  iconColor: string;
+  href: string;
+  subItems?: SubItem[];
+};
+
+const services: Service[] = [
   {
     title: "Business Funding & Financial Consultancy",
     description: "Access grants, loans, and NBFC solutions",
@@ -175,14 +193,14 @@ export default function Navbar() {
                   </div>
 
                   <div className="space-y-1">
-                    {services.map((service, index) => (
+                    {(services as Service[]).map((service, index): JSX.Element => (
                       <div key={index}>
                         {service.subItems ? (
                           <div>
                             {/* For Grants, Loans, NBFC, make the card clickable and open the respective page */}
                             {service.subItems ? (
                               <div className="grid grid-cols-3 gap-2">
-                                {service.subItems.map((subItem, subIndex) => (
+                                {(service.subItems as SubItem[]).map((subItem, subIndex) => (
                                   <Link
                                     key={subIndex}
                                     href={subItem.href}
@@ -198,15 +216,15 @@ export default function Navbar() {
                               </div>
                             ) : (
                               <Link
-                                href={service.href}
+                                href={typeof service === 'object' && service && 'href' in service && typeof service.href === 'string' ? service.href : ''}
                                 className="w-full flex items-center gap-3 p-3 rounded-lg transition hover:bg-gray-50"
                               >
-                                <div className={`w-10 h-10 rounded-lg ${service.iconBg} flex items-center justify-center text-xl`}>
-                                  {service.icon}
+                                <div className={`w-10 h-10 rounded-lg ${typeof service === 'object' && service && 'iconBg' in service && typeof service.iconBg === 'string' ? service.iconBg : ''} flex items-center justify-center text-xl`}>
+                                  {typeof service === 'object' && service && 'icon' in service ? service.icon : ''}
                                 </div>
                                 <div className="flex-1 text-left">
-                                  <div className="font-medium text-gray-900">{service.title}</div>
-                                  <div className="text-sm text-gray-500">{service.description}</div>
+                                  <div className="font-medium text-gray-900">{typeof service === 'object' && service && 'title' in service ? service.title : ''}</div>
+                                  <div className="text-sm text-gray-500">{typeof service === 'object' && service && 'description' in service ? service.description : ''}</div>
                                 </div>
                               </Link>
                             )}
@@ -283,7 +301,7 @@ export default function Navbar() {
                   </button>
                   {servicesOpen && (
                     <div className="p-2 border-t space-y-1">
-                      {services.map((service, index) => (
+                      {services.map((service: Service, index: number) => (
                         <Link 
                           key={index}
                           href={service.href}
