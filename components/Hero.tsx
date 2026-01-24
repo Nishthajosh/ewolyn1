@@ -6,7 +6,13 @@ export default function Hero() {
   const [businessStage, setBusinessStage] = useState("Early");
 
   return (
-    <section className="bg-slate-900 text-white py-16">
+    <section
+      className="text-white py-16"
+      style={{
+        background: 'linear-gradient(120deg, #e6f7fa 0%, #f8fafc 60%, #0B3C5D 100%)',
+        minHeight: '520px',
+      }}
+    >
       <div className="container-max grid items-start gap-10 lg:grid-cols-2">
         {/* Left Side - Content */}
         <div>
@@ -78,7 +84,7 @@ export default function Hero() {
         </div>
 
         {/* Right Side - Eligibility Form */}
-        <div className="bg-slate-800 rounded-2xl p-8">
+        <div className="bg-white/90 rounded-2xl p-8 shadow-lg text-evolyn-blue">
           <h2 className="text-2xl font-bold">Check Your Eligibility</h2>
           <p className="text-slate-400 mt-1">Get instant funding options in 30 seconds</p>
 

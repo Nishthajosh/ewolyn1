@@ -2,48 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 :root {
-  --bg: #ffffff;
-  --fg: #0f172a;
+  --bg: #FFFFFF;
+  --fg: #0B3C5D;
+  --primary: #0B3C5D;
+  --secondary: #1FA2B1;
+  --cyan: #4AC7CF;
+  --accent: #3FAE4D;
+  --text: #23272F;
+  --card-bg: #F8FAFC;
+  --card-shadow: 0 4px 24px 0 rgba(11, 60, 93, 0.07);
 }
+
+
 
 html, body, :root {
   height: 100%;
+  font-family: var(--font-body, 'Inter', 'Roboto', sans-serif);
+  background: var(--bg);
+  color: var(--text);
+  letter-spacing: 0.01em;
 }
+
+
 
 body {
   background: var(--bg);
-  color: var(--fg);
+  color: var(--text);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading, 'Poppins', 'Montserrat', sans-serif);
+  color: var(--primary);
+  font-weight: 700;
+}
+
+a {
+  color: var(--secondary);
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--cyan);
 }
 
 .container-max {
   @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
 }
 
+
 .btn {
-  @apply inline-flex items-center justify-center rounded-md bg-brand px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2;
+  @apply inline-flex items-center justify-center rounded-md px-5 py-3 text-sm font-semibold text-white shadow-lg transition;
+  background: linear-gradient(90deg, #1FA2B1 0%, #4AC7CF 100%);
+  box-shadow: var(--card-shadow);
+  border: none;
+}
+.btn:hover {
+  filter: brightness(0.95);
 }
 
 .btn-outline {
-  @apply inline-flex items-center justify-center rounded-md border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-ink transition hover:bg-slate-50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2;
+  @apply inline-flex items-center justify-center rounded-md border border-evolyn-teal bg-white px-5 py-3 text-sm font-semibold text-evolyn-teal transition hover:bg-evolyn-cyan focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolyn-teal focus-visible:ring-offset-2;
 }
 
 .btn-dark {
-  @apply inline-flex items-center justify-center rounded-md bg-slate-800 px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-slate-500 focus-visible:ring-offset-2;
+  @apply inline-flex items-center justify-center rounded-md bg-evolyn-blue px-5 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-evolyn-teal focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-evolyn-blue focus-visible:ring-offset-2;
 }
 
 .card {
-  @apply rounded-2xl border border-slate-100 bg-white p-6 shadow-soft;
+  @apply rounded-2xl p-6;
+  background: var(--card-bg);
+  box-shadow: var(--card-shadow);
+  border: none;
 }
 
 .section {
   @apply py-16 sm:py-20 lg:py-24;
+  background: var(--bg);
 }
 
 .section-title {
-  @apply text-3xl font-bold tracking-tight text-ink sm:text-4xl;
+  @apply text-3xl font-bold tracking-tight text-evolyn-blue sm:text-4xl;
 }
 
 .section-subtitle {
-  @apply mt-3 max-w-2xl text-base text-muted;
+  @apply mt-3 max-w-2xl text-base text-evolyn-charcoal;
 }
