@@ -5,29 +5,32 @@ export default function NBFCPage() {
     <main className="section bg-gradient-to-br from-blue-50 via-white to-green-50 min-h-screen">
       <div className="container-max max-w-5xl py-10">
         {/* Hero Section */}
-        <div className="rounded-xl shadow-lg bg-gradient-to-r from-blue-900 via-green-900 to-indigo-900 p-8 text-center text-white mb-10">
-          <div className="mb-2">
-            <span className="inline-block bg-gray-800 text-yellow-300 px-4 py-1 rounded-full text-xs font-semibold">Alternative Financing • Flexible Funding</span>
+        <div className="relative rounded-3xl shadow-2xl bg-gradient-to-br from-blue-900 via-emerald-500 to-blue-700 p-8 text-center text-white mb-10 overflow-hidden group transition-all duration-500 hover:shadow-blue-400/30">
+          {/* Animated floating shapes */}
+          <div className="absolute -top-8 -left-8 w-32 h-32 bg-emerald-300/30 rounded-full blur-2xl animate-float z-0" />
+          <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-float delay-200 z-0" />
+          <div className="mb-2 relative z-10">
+            <span className="inline-block bg-white/20 text-yellow-200 px-4 py-1 rounded-full text-xs font-semibold tracking-wide shadow">Alternative Financing • Flexible Funding</span>
           </div>
-          <h1 className="text-4xl font-bold mb-2">NBFC Financing Solutions</h1>
-          <h2 className="text-2xl font-semibold text-orange-400 mb-4">Quick Disbursement • Flexible Eligibility • Specialized Products</h2>
-          <p className="mb-6 text-lg">Access alternative business funding through Ewolyn's NBFC financing services, offering faster processing, flexible eligibility criteria, and specialized lending products tailored for businesses with unique requirements or limited banking history.</p>
-          <div className="flex flex-wrap justify-center gap-6 mt-6">
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+          <h1 className="text-4xl font-extrabold mb-2 text-white drop-shadow-lg relative z-10">NBFC Financing Solutions</h1>
+          <h2 className="text-2xl font-semibold text-emerald-200 mb-4 relative z-10">Quick Disbursement • Flexible Eligibility • Specialized Products</h2>
+          <p className="mb-6 text-lg text-blue-50/90 relative z-10">Access alternative business funding through Ewolyn's NBFC financing services, offering faster processing, flexible eligibility criteria, and specialized lending products tailored for businesses with unique requirements or limited banking history.</p>
+          <div className="flex flex-wrap justify-center gap-6 mt-6 relative z-10">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">24-72hrs</div>
-              <div className="text-sm text-gray-300">Disbursement Time</div>
+              <div className="text-sm text-blue-100">Disbursement Time</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">1Cr+</div>
-              <div className="text-sm text-gray-300">Maximum Funding</div>
+              <div className="text-sm text-blue-100">Maximum Funding</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">95%</div>
-              <div className="text-sm text-gray-300">Approval Rate</div>
+              <div className="text-sm text-blue-100">Approval Rate</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">25+</div>
-              <div className="text-sm text-gray-300">NBFC Partners</div>
+              <div className="text-sm text-blue-100">NBFC Partners</div>
             </div>
           </div>
         </div>
@@ -172,7 +175,10 @@ export default function NBFCPage() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="rounded-xl shadow-lg bg-gradient-to-r from-blue-900 via-green-900 to-indigo-900 p-8 text-center text-white mb-10">
+        <div className="relative rounded-3xl shadow-2xl bg-gradient-to-br from-blue-800 via-emerald-500 to-blue-600 p-8 text-center text-white mb-10 overflow-hidden group transition-all duration-500 hover:shadow-blue-400/30">
+          {/* Animated floating shapes */}
+          <div className="absolute -top-8 -left-8 w-24 h-24 bg-emerald-300/30 rounded-full blur-2xl animate-float z-0" />
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-400/20 rounded-full blur-3xl animate-float delay-200 z-0" />
           <div className="mb-2">
             <span className="inline-block bg-gray-800 text-yellow-300 px-4 py-1 rounded-full text-xs font-semibold">Get Started Today</span>
           </div>

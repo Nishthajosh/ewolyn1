@@ -54,7 +54,7 @@ export default function Footer() {
               <span>📧</span> hello@ewolyn.co.in
             </li>
             <li className="flex items-center gap-2">
-              <span>📞</span> +91 98765 43210
+              <span>📞</span> +91 97377 99937
             </li>
             <li className="flex items-center gap-2">
               <span>🕐</span> Mon–Sat, 9 AM – 6 PM

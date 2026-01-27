@@ -5,29 +5,32 @@ export default function LoansPage() {
     <main className="section bg-gradient-to-br from-green-50 via-white to-blue-50 min-h-screen">
       <div className="container-max max-w-5xl py-10">
         {/* Hero Section */}
-        <div className="rounded-xl shadow-lg bg-gradient-to-r from-blue-900 via-green-900 to-indigo-900 p-8 text-center text-white mb-10">
-          <div className="mb-2">
-            <span className="inline-block bg-gray-800 text-yellow-300 px-4 py-1 rounded-full text-xs font-semibold">Business Finance • Debt Capital</span>
+        <div className="relative rounded-3xl shadow-2xl bg-gradient-to-br from-blue-900 via-emerald-500 to-blue-700 p-8 text-center text-white mb-10 overflow-hidden group transition-all duration-500 hover:shadow-blue-400/30">
+          {/* Animated floating shapes */}
+          <div className="absolute -top-8 -left-8 w-32 h-32 bg-emerald-300/30 rounded-full blur-2xl animate-float z-0" />
+          <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-float delay-200 z-0" />
+          <div className="mb-2 relative z-10">
+            <span className="inline-block bg-white/20 text-yellow-200 px-4 py-1 rounded-full text-xs font-semibold tracking-wide shadow">Business Finance • Debt Capital</span>
           </div>
-          <h1 className="text-4xl font-bold mb-2">Business Loan Services</h1>
-          <h2 className="text-2xl font-semibold text-orange-400 mb-4">Term Loans • Working Capital • MSME Schemes • Collateral-Free Options</h2>
-          <p className="mb-6 text-lg">Access optimal business financing with Ewolyn's specialized loan advisory services covering bank loans, NBFC financing, government schemes, and specialized credit products with end-to-end support from application to disbursement.</p>
-          <div className="flex flex-wrap justify-center gap-6 mt-6">
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+          <h1 className="text-4xl font-extrabold mb-2 text-white drop-shadow-lg relative z-10">Business Loan Services</h1>
+          <h2 className="text-2xl font-semibold text-emerald-200 mb-4 relative z-10">Term Loans • Working Capital • MSME Schemes • Collateral-Free Options</h2>
+          <p className="mb-6 text-lg text-blue-50/90 relative z-10">Access optimal business financing with Ewolyn's specialized loan advisory services covering bank loans, NBFC financing, government schemes, and specialized credit products with end-to-end support from application to disbursement.</p>
+          <div className="flex flex-wrap justify-center gap-6 mt-6 relative z-10">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">₹500Cr+</div>
-              <div className="text-sm text-gray-300">Loan Value Facilitated</div>
+              <div className="text-sm text-blue-100">Loan Value Facilitated</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">92%</div>
-              <div className="text-sm text-gray-300">Approval Rate</div>
+              <div className="text-sm text-blue-100">Approval Rate</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">48hrs</div>
-              <div className="text-sm text-gray-300">Quick Processing</div>
+              <div className="text-sm text-blue-100">Quick Processing</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">20+</div>
-              <div className="text-sm text-gray-300">Lending Partners</div>
+              <div className="text-sm text-blue-100">Lending Partners</div>
             </div>
           </div>
         </div>
@@ -172,7 +175,10 @@ export default function LoansPage() {
         </div>
 
         {/* Call to Action Section */}
-        <div className="rounded-xl shadow-lg bg-gradient-to-r from-blue-900 via-green-900 to-indigo-900 p-8 text-center text-white mb-10">
+        <div className="relative rounded-3xl shadow-2xl bg-gradient-to-br from-blue-800 via-emerald-500 to-blue-600 p-8 text-center text-white mb-10 overflow-hidden group transition-all duration-500 hover:shadow-blue-400/30">
+          {/* Animated floating shapes */}
+          <div className="absolute -top-8 -left-8 w-24 h-24 bg-emerald-300/30 rounded-full blur-2xl animate-float z-0" />
+          <div className="absolute bottom-0 right-0 w-32 h-32 bg-blue-400/20 rounded-full blur-3xl animate-float delay-200 z-0" />
           <div className="mb-2">
             <span className="inline-block bg-gray-800 text-yellow-300 px-4 py-1 rounded-full text-xs font-semibold">Get Started Today</span>
           </div>
@@ -193,8 +199,8 @@ export default function LoansPage() {
             </div>
           </div>
           <div className="mt-6 flex flex-col md:flex-row justify-center gap-4">
-            <a href="#" className="inline-block bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2 rounded-full shadow transition">Start Application</a>
-            <a href="tel:18005710607" className="inline-block bg-gray-700 hover:bg-gray-800 text-white font-semibold px-6 py-2 rounded-full shadow transition">Call: 1800 571 0607</a>
+            <a href="#" className="inline-block bg-gradient-to-r from-emerald-400 to-blue-600 hover:from-emerald-500 hover:to-blue-700 text-white font-semibold px-6 py-2 rounded-full shadow transition focus:outline-none focus:ring-2 focus:ring-emerald-400">Start Application</a>
+            <a href="tel:9737799937" className="inline-block bg-white/20 hover:bg-white/30 text-white font-semibold px-6 py-2 rounded-full shadow transition focus:outline-none focus:ring-2 focus:ring-blue-400">Call: 97377 99937</a>
           </div>
         </div>
       </div>

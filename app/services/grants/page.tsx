@@ -5,29 +5,32 @@ export default function GrantsPage() {
     <main className="section bg-gradient-to-br from-blue-50 via-white to-pink-50 min-h-screen">
       <div className="container-max max-w-5xl py-10">
         {/* Hero Section */}
-        <div className="rounded-xl shadow-lg bg-gradient-to-r from-indigo-900 via-blue-900 to-purple-900 p-8 text-center text-white mb-10">
-          <div className="mb-2">
-            <span className="inline-block bg-gray-800 text-yellow-300 px-4 py-1 rounded-full text-xs font-semibold">Government Schemes • Non-Repayable Funding</span>
+        <div className="relative rounded-3xl shadow-2xl bg-gradient-to-br from-blue-900 via-emerald-500 to-blue-700 p-8 text-center text-white mb-10 overflow-hidden group transition-all duration-500 hover:shadow-blue-400/30">
+          {/* Animated floating shapes */}
+          <div className="absolute -top-8 -left-8 w-32 h-32 bg-emerald-300/30 rounded-full blur-2xl animate-float z-0" />
+          <div className="absolute bottom-0 right-0 w-40 h-40 bg-blue-400/20 rounded-full blur-3xl animate-float delay-200 z-0" />
+          <div className="mb-2 relative z-10">
+            <span className="inline-block bg-white/20 text-yellow-200 px-4 py-1 rounded-full text-xs font-semibold tracking-wide shadow">Government Schemes • Non-Repayable Funding</span>
           </div>
-          <h1 className="text-4xl font-bold mb-2 text-blue-600">Government Grants</h1>
-          <h2 className="text-2xl font-semibold text-orange-400 mb-4">MSME • Startup India • DPIIT • Sector-Specific Schemes</h2>
-          <p className="mb-6 text-lg">Access non-repayable government funding with Ewolyn's specialized grants consultancy services covering scheme identification, eligibility assessment, application development, documentation support, and follow-up to maximize your chances of securing government financial assistance.</p>
-          <div className="flex flex-wrap justify-center gap-6 mt-6">
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+          <h1 className="text-4xl font-extrabold mb-2 text-white drop-shadow-lg relative z-10">Government Grants</h1>
+          <h2 className="text-2xl font-semibold text-emerald-200 mb-4 relative z-10">MSME • Startup India • DPIIT • Sector-Specific Schemes</h2>
+          <p className="mb-6 text-lg text-blue-50/90 relative z-10">Access non-repayable government funding with Ewolyn's specialized grants consultancy services covering scheme identification, eligibility assessment, application development, documentation support, and follow-up to maximize your chances of securing government financial assistance.</p>
+          <div className="flex flex-wrap justify-center gap-6 mt-6 relative z-10">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">₹500Cr+</div>
-              <div className="text-sm text-gray-300">Grants Secured</div>
+              <div className="text-sm text-blue-100">Grants Secured</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">85%</div>
-              <div className="text-sm text-gray-300">Success Rate</div>
+              <div className="text-sm text-blue-100">Success Rate</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">50+</div>
-              <div className="text-sm text-gray-300">Schemes Covered</div>
+              <div className="text-sm text-blue-100">Schemes Covered</div>
             </div>
-            <div className="bg-gray-900/80 rounded-lg px-6 py-4 min-w-[120px]">
+            <div className="bg-white/10 rounded-2xl px-6 py-4 min-w-[120px] shadow hover:bg-white/20 transition-all">
               <div className="text-2xl font-bold text-white">100%</div>
-              <div className="text-sm text-gray-300">Documentation Support</div>
+              <div className="text-sm text-blue-100">Documentation Support</div>
             </div>
           </div>
           {/* Reference: Enego Grants Page button removed as requested */}

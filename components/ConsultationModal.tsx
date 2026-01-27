@@ -22,53 +22,74 @@ const ConsultationModal: React.FC<{
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm animate-fade-in">
-      <div className="relative bg-gradient-to-br from-green-200 via-blue-100 to-blue-300 rounded-3xl shadow-2xl p-8 w-full max-w-md mx-4">
+      <div className="relative w-full max-w-md mx-auto bg-gradient-to-br from-emerald-400 via-blue-100 to-blue-50 rounded-3xl shadow-2xl p-8 md:p-10 animate-modal-pop">
         <button
-          className="absolute top-3 right-3 text-blue-700 text-2xl font-bold hover:text-red-500 focus:outline-none"
+          className="absolute top-4 right-4 text-blue-900 text-2xl font-bold hover:text-emerald-600 focus:outline-none"
           onClick={onClose}
-          aria-label="Close Modal"
+          aria-label="Close"
         >
           ×
         </button>
-        <h2 className="text-2xl font-bold text-blue-900 mb-2 text-center">Get Free Consultation</h2>
-        <ul className="mb-4 space-y-1 text-blue-800 text-base">
-          <li>✔ 1000+ MSMEs Supported</li>
-          <li>✔ 24-hour Response Time</li>
-          <li>✔ Expert Team Support</li>
+        <h2 className="text-2xl md:text-3xl font-bold text-blue-900 mb-2 text-center">Get Free Consultation</h2>
+        <ul className="flex flex-wrap gap-3 justify-center mb-6">
+          <li className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 text-emerald-700 text-sm font-medium shadow">
+            <span className="text-emerald-400">✔</span> 1000+ MSMEs Supported
+          </li>
+          <li className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 text-emerald-700 text-sm font-medium shadow">
+            <span className="text-emerald-400">✔</span> Quick 24-Hour Response
+          </li>
+          <li className="flex items-center gap-2 bg-white/80 rounded-full px-4 py-2 text-emerald-700 text-sm font-medium shadow">
+            <span className="text-emerald-400">✔</span> Dedicated Expert Team
+          </li>
         </ul>
-        <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Full Name"
-            required
-            className="input input-bordered rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-400"
-            value={form.name}
-            onChange={handleChange}
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Email Address"
-            required
-            className="input input-bordered rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-400"
-            value={form.email}
-            onChange={handleChange}
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Phone Number"
-            required
-            pattern="[0-9]{10}"
-            maxLength={10}
-            className="input input-bordered rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-300"
-            value={form.phone}
-            onChange={handleChange}
-          />
+        <form className="space-y-5" onSubmit={handleSubmit} autoComplete="off">
+          <div>
+            <label htmlFor="modal-name" className="block text-sm font-medium text-blue-900 mb-1">Full Name</label>
+            <input
+              id="modal-name"
+              name="name"
+              type="text"
+              required
+              className="w-full rounded-lg border border-blue-200 px-4 py-3 focus:ring-2 focus:ring-emerald-400 focus:outline-none"
+              placeholder="Your Name"
+              autoComplete="off"
+              value={form.name}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="modal-email" className="block text-sm font-medium text-blue-900 mb-1">Email Address</label>
+            <input
+              id="modal-email"
+              name="email"
+              type="email"
+              required
+              className="w-full rounded-lg border border-blue-200 px-4 py-3 focus:ring-2 focus:ring-emerald-400 focus:outline-none"
+              placeholder="you@email.com"
+              autoComplete="off"
+              value={form.email}
+              onChange={handleChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="modal-phone" className="block text-sm font-medium text-blue-900 mb-1">Phone Number</label>
+            <input
+              id="modal-phone"
+              name="phone"
+              type="tel"
+              required
+              pattern="[0-9]{10}"
+              maxLength={10}
+              className="w-full rounded-lg border border-blue-200 px-4 py-3 focus:ring-2 focus:ring-emerald-400 focus:outline-none"
+              placeholder="10-digit Mobile Number"
+              autoComplete="off"
+              value={form.phone}
+              onChange={handleChange}
+            />
+          </div>
           <button
             type="submit"
-            className="mt-2 bg-gradient-to-r from-blue-500 to-green-400 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:scale-105 transition-transform focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full bg-gradient-to-r from-emerald-400 to-blue-600 text-white font-semibold py-3 rounded-full shadow hover:from-emerald-500 hover:to-blue-700 hover:scale-105 transition"
             aria-label="Get Free Consultation"
           >
             Get Free Consultation
