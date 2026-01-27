@@ -131,7 +131,7 @@ export default function Navbar() {
               📋 Track Application
             </Link>
             <a href="tel:+919737799937" className="bg-slate-800 px-3 py-1 rounded-full hover:bg-slate-700 flex items-center gap-1">
-              📞 +91 98765 43210
+              📞 +91 97377 99937
             </a>
           </div>
         </div>
