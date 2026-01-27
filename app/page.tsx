@@ -8,6 +8,7 @@ import GovernmentSchemes from "@/components/GovernmentSchemes";
 import FundingOptions from "@/components/FundingOptions";
 import Testimonials from "@/components/Testimonials";
 import Footer from "@/components/Footer";
+import BusinessInquiryForm from "@/components/BusinessInquiryForm";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -23,6 +24,11 @@ export default function HomePage() {
       {/* 1. HERO SECTION */}
       {/* HERO */}
       <Hero />
+
+      {/* BUSINESS INQUIRY FORM (NEW) */}
+      <section className="section">
+        <BusinessInquiryForm />
+      </section>
 
       {/* TRUST & CREDIBILITY BAR */}
       <LogoGrid />
